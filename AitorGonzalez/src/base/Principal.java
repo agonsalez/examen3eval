@@ -3,6 +3,11 @@ package base;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+/**
+ * 
+ * @author agonsalez
+ *
+ */
 public class Principal {
 	private static final Logger LOGGER = Logger.getLogger(Principal.class.getName());
 
@@ -87,7 +92,13 @@ public class Principal {
 		}
 	}
 	
-	static boolean solicitarPermiso(int nivel) {
+	
+	/**
+	 * Este método booleano devuelve 'true' si la variable 'nivel' tiene 50 o más. De lo contrario, devuelve 'false'.
+	 * @param nivel Variable de int para el método solicitarPermiso
+	 * @return Devuelve true o false
+	 */
+	public static boolean solicitarPermiso(int nivel) { //public
 		if (nivel > 50) {
 			return true;
 		}else {
